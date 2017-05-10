@@ -1,0 +1,497 @@
+/*=======================    ШРИФТЫ    ======================*/
+/* font-family: "ArialRegular"; */
+@font-face {
+    font-family: "ArialRegular";
+    src: url("../fonts/ArialRegular/ArialRegular.eot");
+    src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+    url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaRegular"; */
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot");
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaNeueUltraLight"; */
+@font-face {
+    font-family: 'HelveticaNeueUltraLight';
+    src: url('../fonts/HelveticaNeueUltraLight/HelveticaNeueUltraLight.eot');
+    src: url('../fonts/HelveticaNeueUltraLight/HelveticaNeueUltraLight.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueUltraLight/HelveticaNeueUltraLight.woff2') format('woff2'),
+         url('../fonts/HelveticaNeueUltraLight/HelveticaNeueUltraLight.woff') format('woff'),
+         url('../fonts/HelveticaNeueUltraLight/HelveticaNeueUltraLight.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueUltraLight/HelveticaNeueUltraLight.svg#HelveticaNeueUltraLight') format('svg');
+         
+}
+
+.arial {font-family: "ArialRegular";}
+.Helvetica {font-family: "HelveticaRegular";}
+.Myriad {font-family: "MyriadProSemiBold";}
+.Helvetica_UL {font-family: "HelveticaNeueUltraLight";}
+
+/*=======================    БАЗОВЫЕ НАСТРОЙКИ    ======================*/
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	background-color: #EAEAEA;
+	.arial;
+	font-size: 11px;
+	color: #fff;
+}
+section {
+	position: relative;
+}
+ul {
+	list-style: none;
+}
+.transition {
+	-moz-transition: all 0.1s 0.08s ease;
+	-o-transition: all 0.1s 0.08s ease;
+	-webkit-transition: all 0.1s 0.08s ease;
+}
+@black: #2e3842;
+a {
+	outline: none;
+	&:focus {
+			outline: none;
+	}
+}
+a:hover,
+a:focus,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+input,
+textarea {
+    outline:none;
+    &:active {
+    	outline:none;
+    }
+}
+.center-blocks {
+	display: block;
+	margin: 0 auto;
+}
+/*=======================    Header    ======================*/
+
+section#header {
+	height: 135px;
+	background: url(../img/header-bg2.png) center center,	
+	            url(../img/header-bg.png) center center;	
+	h1 {		
+		margin-top: 45px;
+		font-size: 46px;
+		text-transform: uppercase;
+		.Helvetica_UL;
+		color: #ffffff;					
+		font-weight: 700;
+		line-height: 24px; 
+		text-align: center;
+		text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);				
+	}
+	h4 {	
+		margin-top: 8px;
+		
+		text-transform: uppercase;
+		.Helvetica;
+		color: #ebdbaa;
+		font-size: 12px; 
+		font-weight: 400;
+		line-height: 17px; 
+		text-align: center;
+		text-shadow: 0px 1px 1px #000000;
+		letter-spacing: 2.5px;
+		
+	}
+}
+
+/*=======================    Nav    ======================*/
+
+section#nav {
+	background: url(../img/nav-bg.png) center center;
+	height: 37px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid @black;
+	.scale {
+		img {
+			.center-blocks;
+			padding-top: 4px;
+		}
+	}
+	.nav_button{
+		
+		ul{	
+			margin: 0 auto;					
+			padding-left: 3px;
+			height: 37px;
+			width: 176px;
+			background: url(../img/nav-btn_block.png) no-repeat center center;
+			li {
+				margin: 0 auto;
+				position:relative;
+				top: 30%;				
+ 				display: inline-block;				
+				a {					
+					background: url(../img/nav-btn.png) no-repeat center center;
+					width: 53px;
+					height: 23px;
+					font-family: 'Myriad Pro';
+					color: #ffffff;
+					font-size: 11px;
+					font-weight: 600;
+					text-align: center;
+					text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75);
+					padding: 7px 11px;
+					.transition;
+					&:hover {						
+						box-shadow: 0px 10px 8px -10px rgba(72,74,78,1);						
+						-moz-box-shadow: 0px 10px 8px -10px rgba(72,74,78,1);
+						-webkit-box-shadow: 0px 10px 8px -10px rgba(72,74,78,1);
+					}	
+				}
+				a:active, a:focus {
+					background: url(../img/nav-btn_active.png) no-repeat center center;
+					
+				}
+				
+			}
+		}		
+	}
+	.search {
+		.center-blocks;
+		text-align: center;
+		height: 37px;
+		// padding-left: 66px;
+		form {
+			.center-blocks;
+			position: relative;	
+			top: 4px;
+			
+			color: #000;
+			font-size: 14px;
+			.Myriad;			
+		}
+		#input-search {
+			.center-blocks;			
+			height: 27px;			
+			padding-left: 38px;
+			padding-right: 12px;
+			width: 175px;			
+			margin-left: 60px;
+			margin: 0 auto;		
+			border: none;
+			// border: 1px solid #252628;
+			// border-radius: 8px;
+			background: url(../img/search.png) no-repeat center left;				
+		}
+	}
+}
+
+/*=======================    Main    ======================*/
+
+section#main {
+	height: auto;
+	background: url(../img/main-bg.png) center center;
+	border-top: 1px solid #ebebee;
+	// border-bottom: 2px groove #9a9ea7;
+		// box-shadow: 0 1px 1px  #b8babe;
+	.row1 {
+		.block1, .block2, .block3 {
+			height: auto;
+			background: url(../img/shine-center.png) no-repeat center top ;
+			.adv1 {				
+				width: auto;
+				margin-top: 52px;
+				height: 89px;
+				background: url(../img/adv_h.png) no-repeat center center;
+							 // rgba(137,142,155,0.1);
+							 opacity: .5;
+				p {
+					.Helvetica;
+					text-transform: uppercase;
+					color: #f1f2f4;
+					font-size: 15.01px; 
+					font-weight: 400;
+					line-height: 89px; 
+					text-align: center;
+					text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3); 
+				}	
+			}
+
+			.miniature,.miniature-2,.miniature-3 {
+				margin-top: 62px;
+				height: auto;
+				img {
+					box-shadow: 0px 12px 8px -10px rgba(72,74,78,1);
+					-moz-box-shadow: 0px 12px 8px -10px rgba(72,74,78,1);
+					-webkit-box-shadow: 0px 12px 8px -10px rgba(72,74,78,1);
+				}				
+				// background: url(../img/big_img1.png) no-repeat center center;
+				// box-shadow: 0px 12px 8px -10px rgba(72,74,78,1);
+				// -moz-box-shadow: 0px 12px 8px -10px rgba(72,74,78,1);
+				// -webkit-box-shadow: 0px 12px 8px -10px rgba(72,74,78,1);
+				&-2 {
+					// background: url(../img/big_img2.png) no-repeat center center;
+				}
+				&-3 {
+					// background: url(../img/big_img3.png) no-repeat center center;
+				}				
+			}
+			.miniature_bottom,.miniature_bottom-2,.miniature_bottom-3 {
+				margin-top: 40px;
+				height: auto;
+				img {
+					box-shadow: 0px 12px 8px -10px rgba(72,74,78,1);
+					-moz-box-shadow: 0px 12px 8px -10px rgba(72,74,78,1);
+					-webkit-box-shadow: 0px 12px 8px -10px rgba(72,74,78,1);
+				}				
+				// background: url(../img/big_img4.png) no-repeat center center;
+				// box-shadow: 0px 12px 8px -10px rgba(72,74,78,1);
+				display: block;
+				// height: auto;
+				max-width: 100%;
+				&-2 {
+					// background: url(../img/big_img5.png) no-repeat center center;
+				}
+				&-3 {
+					// background: url(../img/big_img6.png) no-repeat center center;
+				}				
+			}
+			.miniature-btn {
+				margin: 0 auto;
+				margin-top: 16px;
+				height: 23px;
+				width: 137px;
+				border-radius: 10px;
+				// background-color: #f9fafa;
+				// border-top: 1px solid #cfd1d5;
+				// border-left: 1px solid #cfd1d5;
+				// border-right: 1px solid #cfd1d5;
+				// border-bottom: 1px solid #898d95;				
+				a {
+					.center-blocks;
+					width: inherit;
+					height: inherit;
+					background: url(../img/btn-bg.png) no-repeat center center;
+					text-align: center;
+					line-height: 23px;
+					font-weight: 500;
+					color: #505257;
+					.arial;
+					font-size: 11px;
+					text-shadow: 0px 1px 0px #ecedef;
+					.transition;
+					&:hover {						
+						box-shadow: 0px 8px 8px -10px rgba(72,74,78,1);						
+						-moz-box-shadow: 0px 8px 8px -10px rgba(72,74,78,1);
+						-webkit-box-shadow: 0px 8px 8px -10px rgba(72,74,78,1);
+					}	
+				}		
+			}			
+		}
+	}
+	.row2 {
+
+		margin-top: 58px;
+		height: 40px;	
+		.nav-work {		
+			margin:auto;				
+			height: 40px;	
+			width: 170px;		
+			// left: 72px;
+			// position: absolute;
+			// left: 50%;
+				
+			// margin-left: 20px;
+			
+			background: url(../img/back-bottom-btn.png) no-repeat center center;			
+			.btn1, .btn2 {
+				margin: 0 auto;
+				display: inline-block;
+				vertical-align: center;
+				// position: absolute;
+				width: 50px;
+				height: 22px;
+				
+				a {
+					margin: 0 auto;
+					display: inline-block;
+					width: inherit;
+					height: inherit;
+					vertical-align: center;
+					font-family: Arial;
+					color: #505257;
+					font-size: 12px;
+					font-weight: 400;
+					text-align: center;				
+					text-shadow: 0px 1px 0px #ffffff;						
+					line-height: 22px;
+					.transition;
+					&:hover {						
+						box-shadow: 0px 9px 8px -10px rgba(72,74,78,1);						
+						-moz-box-shadow: 0px 9px 8px -10px rgba(72,74,78,1);
+						-webkit-box-shadow: 0px 9px 8px -10px rgba(72,74,78,1);
+					}						
+				}
+				#text-btn1 {
+					margin-left: 10px;
+				}
+				#text-btn2 {
+					margin-right: 10px;
+				} 		
+				// .src-btn1 {
+				// // 	margin-left: 5px;
+				// padding-left: 5px;
+				// }
+				// .src-btn2 {
+				// // 	margin-right: 10px;
+				// padding-right: 5px;
+				// }
+			}
+			.btn1 {
+				margin: 0 auto;
+				background: url(../img/bottom-btn-left.png) no-repeat center center;
+				left: 5%;
+				margin-top: 9px;
+				margin-right: 2px;
+			}
+			.btn2 {
+				margin: 0 auto;
+				background: url(../img/bottom-btn-right.png) no-repeat center center;
+				right: 5%;
+				margin-top: 9px;
+				margin-left: 2px;
+			}
+		}
+	}
+}
+
+/*=======================    Footer    ======================*/
+
+section#footer {
+	background: url(../img/footer-bg.png) repeat center center;
+	background-size: cover;
+	height:267px;
+	border-top: 1px solid #fff;
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.43);	
+	height: 266px;
+	.footer-text{		
+		h6 {
+			margin: 0;
+			margin-top: 28px;
+			.arial;
+			color: #343e49;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 0.42px;
+			line-height: 18px;
+			text-align: left;
+			text-shadow: 0px 1px 0px #ffffff;
+			margin-bottom: 16px;
+		}
+		p {
+			.arial;
+			color: #343e49;
+			font-size: 11px;
+			font-weight: 400;
+			letter-spacing: 0.33px;
+			line-height: 18px;
+			text-align: left;
+			text-shadow: 0px 1px 0px #ffffff;
+			padding-bottom: 18px;		
+		}
+	}
+	.bottom {			
+		.nav{
+
+			border-top: 1px solid #eff1f4;
+			box-shadow: 0px -1px 0px #a8adb9;	
+		}		
+		li {
+			padding-top: 21px;	
+		}
+		a{			
+			display:inline-block;
+			.arial;
+			color: #8c919b;
+			font-size: 11px;
+			font-weight: 400;
+			letter-spacing: 0.33px;
+			line-height: 11px;			
+			text-shadow: 0px 1px 0px #ffffff;
+		}
+		#about {
+			padding-left: 13px;
+			padding-right: 13px;
+			border-left: 1px solid #8c919b;
+			border-right: 1px solid #8c919b;
+			box-shadow: 1px 0px 0px #ccd0d6;
+		}
+		#showcase {
+			float: right;
+			margin-right: -18px;
+		}
+	} 
+}
+
+/*=======================    ШРИФТЫ    ======================*/
+
+/*=======================    ШРИФТЫ    ======================*/
+
+/*=======================    ШРИФТЫ    ======================*/
+
+/*=======================    ШРИФТЫ    ======================*/
+
+/*=======================    ШРИФТЫ    ======================*/
+
+/*=======================    ШРИФТЫ    ======================*/
+
+/*=======================    ПОДВАЛ    ======================*/
+
+/*=======================    	ВСПЛЫВАЮЩИЕ ОКНА    ======================*/
+
+/*=======================    	АДАПТИВ    ======================*/
+
+@media(min-width:0px) and (max-width:320px) {
+	
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+	
+}
+
+
+
